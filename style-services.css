@@ -131,14 +131,12 @@ nav {
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 20px 20px 20px 20px;
 }
 .service-title {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    margin: auto;
 }
 .service-left-1 img,
 .service-left-1-content {
@@ -147,6 +145,9 @@ nav {
     width: 25%;
 }
 /* sliding window animation */
+.container {
+    display: flex;
+}
 .image-container {
     margin: 20px;
     border-radius: 20px;
