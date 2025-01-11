@@ -125,7 +125,7 @@ nav {
 }
 .message-overlay {
     position: absolute;
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: 'BODAR';
     top: 25%;
     left: 50%;
@@ -214,7 +214,7 @@ nav {
         display: block;
     }
     .message-overlay {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .details-overlay {
         font-size: 1.2rem;
