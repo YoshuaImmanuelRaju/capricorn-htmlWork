@@ -76,7 +76,48 @@ nav {
 .btn:hover {
     background-color: #332f23;
 }
+/* sidebar */
+.menu-icon {
+    color: #8f8059;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+.sidebar {
+    align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #332f23;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1000;
+}
 
+.sidebar a {
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+}
 /* Contact details */
 .contact-container img {
     opacity: 0.2;
@@ -157,4 +198,33 @@ nav {
 .footer-bottom p {
     margin: 0px;
     font-size: 0.8rem;
+}
+
+@media (width < 800px){
+    .nav-links{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .btn {
+        display: none;
+    }
+    .sidebar {
+        display: block;
+    }
+    .message-overlay {
+        font-size: 4rem;
+    }
+    .details-overlay {
+        font-size: 1.2rem;
+    }
+}
+@media (width < 400px){
+    .message-overlay {
+        font-size: 3rem;
+    }
+    .details-overlay {
+        font-size: .6rem;
+    }
 }

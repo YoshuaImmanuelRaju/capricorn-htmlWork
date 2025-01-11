@@ -77,6 +77,48 @@ nav {
     background-color: #332f23;
 }
 
+/* sidebar */
+.menu-icon {
+    color: #8f8059;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+.sidebar {
+    align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #332f23;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.sidebar a {
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+}
 /* sliding window animation */
 .slide-container {
     position: relative;
@@ -330,6 +372,9 @@ nav {
     .nav-links{
         display: none;
     }
+    .menu-icon{
+        display: block;
+    }
     .message-overlay {
         font-size: 3rem;
     }
@@ -337,8 +382,11 @@ nav {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
-    .footer {
-        grid-template-columns: 1fr 200px;
+    .btn {
+        display: none;
+    }
+    .sidebar {
+        display: block;
     }
 }
 
