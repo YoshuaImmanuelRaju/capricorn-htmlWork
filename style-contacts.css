@@ -153,7 +153,8 @@ nav {
 .details-overlay img {
     opacity: 1;
     max-width: 5rem;
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* footer */
