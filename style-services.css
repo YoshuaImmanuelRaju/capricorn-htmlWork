@@ -46,6 +46,7 @@ nav {
 }
 
 .link a {
+    font-size: calc(1.1vw + 1.1vh);
     position: relative;
     padding-bottom: 0.75rem;
     color: white
@@ -66,7 +67,7 @@ nav {
 }
 .btn {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: calc(1.1vw + 1.1vh);
     color: white;
     background-color: #8f8059;
     border-radius: 5px;
@@ -79,7 +80,7 @@ nav {
 /* sidebar */
 .menu-icon {
     color: #8f8059;
-    font-size: 28px;
+    font-size: calc(2.5vw + 2.5vh);
     cursor: pointer;
     display: none;
 }
@@ -101,7 +102,7 @@ nav {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: calc(2.1vw + 2.1vh);
     color: white;
     display: block;
     transition: 0.3s;
@@ -133,6 +134,7 @@ nav {
     height: 100%;
 }
 .service-title {
+    font-size: calc(3.2vw + 3.2vh);
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -151,7 +153,7 @@ nav {
 .image-container {
     margin: 20px;
     border-radius: 20px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -165,20 +167,22 @@ nav {
     position: relative;
 }
 .grid-right {
-    margin: 20px;
+    align-items: center;
+    margin: 10px;
+}
+.grid-left {
+    align-items: center;
+    margin: 0px;
 }
 .grid-left,
 .grid-right {
-    max-width: 50%;
+    max-width: 100%;
 }
 .slides-1,
 .slides-2,
 .slides-3,
 .slides-4,
 .slides-5 {
-    max-width: 20rem;
-    max-height: 20rem;
-    margin: 1rem;
     max-width: 100%;
     background-color: rgb(0, 0, 0);
     width: auto;
@@ -187,24 +191,42 @@ nav {
     transition: all 0.3s ease;
 }
 .grid-right h1 {
-    font-family: 'Montserrt';
+    margin-top: 20px;
+    color: white;
+    font-family: 'BODAR';
     text-align: center;
-    font-size: 2.2rem;
+    font-size: calc(2.2vw + 2.2vh);
     margin-right: 1rem;
 }
 .grid-right p {
+    margin-bottom: 20px;
+    color: white;
     align-items: center;
     text-align: center;
     margin-right: 1rem;
     position: relative;
-    font-family: 'Montserrt';
+    font-family: 'Montserrat';
     text-align: center;
-    font-size: 1.5rem;
+    font-size: calc(1.5vw + 1.5vh);
+}
+.grid-right button {
+    font-size: calc(1.1vw + 1.1vh);
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    border: none;
+    background-color: #8f8059;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+.grid-right button:hover {
+    background-color: #332f23;
+}
 /* footer */
-
 .footer {
+    font-size: calc(1.1vw + 1.1vh);
     background-color: #2c2c2c;
     color: white;
     padding: 20px 20px 20px 20px;
@@ -250,7 +272,7 @@ nav {
 }
 .footer-bottom p {
     margin: 0px;
-    font-size: 0.8rem;
+    font-size: calc(1.1vw + 1.1vh);
 }
 
 @media (width < 800px){

@@ -46,6 +46,7 @@ nav {
 }
 
 .link a {
+    font-size: calc(1.1vw + 1.1vh);
     position: relative;
     padding-bottom: 0.75rem;
     color: white
@@ -66,7 +67,7 @@ nav {
 }
 .btn {
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: calc(1.1vw + 1.1vh);
     color: white;
     background-color: #8f8059;
     border-radius: 5px;
@@ -79,7 +80,7 @@ nav {
 /* sidebar */
 .menu-icon {
     color: #8f8059;
-    font-size: 28px;
+    font-size: calc(2.5vw + 2.5vh);
     cursor: pointer;
     display: none;
 }
@@ -101,7 +102,7 @@ nav {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: calc(2.1vw + 2.1vh);
     color: white;
     display: block;
     transition: 0.3s;
@@ -124,8 +125,9 @@ nav {
     color-scheme: #8f8059;
 }
 .message-overlay {
+    gap: 10px;
     position: absolute;
-    font-size: 3rem;
+    font-size: calc(3.2vw + 3.2vh);
     font-family: 'BODAR';
     top: 25%;
     left: 50%;
@@ -136,22 +138,27 @@ nav {
 }
 .details-overlay {
     position: absolute;
-    font-size: 2rem;
-    font-family: 'BODAR';
+    font-size: calc(1.5vw + 1.5vh);
+    font-family: 'Montserrat';
     top: 50%;
     left: 50%;
-    width: 80%;
+    width: 95%;
     transform: translate(-50%, -50%);
-    align-items: center;
-    text-align: justify;
+    text-align: center;
     color: rgb(255, 255, 255);
     background: #8f8059c7;
     padding: 20px;
     border-radius: 10px;
 }
-/* footer */
+.details-overlay img {
+    opacity: 1;
+    max-width: 5rem;
+    margin-left: 45%;
+}
 
+/* footer */
 .footer {
+    font-size: calc(1.1vw + 1.1vh);
     background-color: #2c2c2c;
     color: white;
     padding: 20px 20px 20px 20px;
@@ -197,7 +204,7 @@ nav {
 }
 .footer-bottom p {
     margin: 0px;
-    font-size: 0.8rem;
+    font-size: calc(1.1vw + 1.1vh);
 }
 
 @media (width < 800px){
@@ -212,19 +219,5 @@ nav {
     }
     .sidebar {
         display: block;
-    }
-    .message-overlay {
-        font-size: 2rem;
-    }
-    .details-overlay {
-        font-size: 1.2rem;
-    }
-}
-@media (width < 400px){
-    .message-overlay {
-        font-size: 3rem;
-    }
-    .details-overlay {
-        font-size: .6rem;
     }
 }
